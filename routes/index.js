@@ -6,9 +6,9 @@ const jsonData = fs.readFileSync("./data.json","utf-8")
 const data = JSON.parse(jsonData)
 // console.log(data);
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: 'Express' });
+// });
 router.get('/farm', function(req, res, next) {
   res.render('farm', { allData : data});
 });
