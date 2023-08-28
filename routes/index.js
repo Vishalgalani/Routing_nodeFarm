@@ -9,7 +9,7 @@ const data = JSON.parse(jsonData)
 // router.get('/', function(req, res, next) {
 //   res.render('index', { title: 'Express' });
 // });
-router.get('/farm', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('farm', { allData : data});
 });
 router.get('/product', function(req, res, next) {
